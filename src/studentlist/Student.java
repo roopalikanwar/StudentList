@@ -11,14 +11,23 @@ package studentlist;
  */
 public class Student {
     private String name;
+    private int studentId;
     
-    public Student(String name){
-       this.name = name; 
+    public Student(String name, int studentId){
+       this.name = name;
+       this.studentId = studentId;
     }
-    public String getName(){
+    public int getStudentId(){
+     return studentId ;
+    }
+    public void setStudentId(int givenStudentId) {
+        studentId = givenStudentId;
+    }
+    
+     public String getName(){
      return name;
     }
-   public void setName(String givenName) {
+    public void setName(String givenName) {
         name = givenName;
     }
 }
